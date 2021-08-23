@@ -1,0 +1,75 @@
+/*
+Amarillo: #EAC926;
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666;
+Gris claro: #ebebeb;
+Verde: #39b54a;
+*/
+
+header {
+    background-color: #EAC926;
+    padding-bottom: 1%;
+}
+
+header img {
+    display: block;
+    width: 30%;
+    padding: 10px;
+}
+
+.search-bar {
+    text-indent: 10px;
+}
+
+header p {
+    text-align: center;
+}
+
+.burger-menu {
+    background-color: #03264C;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    border-radius: 10px;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+}
+
+body {
+    font-family: roboto;
+    font-size: 12px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+.precios {
+    font-size: 18px;
+}
+
+.descuentos {
+    font-size: 16px;
+}
+
+.descripciones {
+    font-size: 16px;
+}
+
+footer {
+    text-align: center;
+    display: flex;
+}
+
+footer i {
+    background-color: white;
+    color: #1259c3;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
