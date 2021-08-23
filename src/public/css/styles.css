@@ -7,6 +7,10 @@ Gris claro: #ebebeb;
 Verde: #39b54a;
 */
 
+* {
+    box-sizing: border-box;
+}
+
 header {
     background-color: #EAC926;
     padding-bottom: 1%;
