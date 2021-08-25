@@ -11,32 +11,45 @@ Verde: #39b54a;
     box-sizing: border-box;
 }
 
+body {
+    font-family: roboto;
+    font-size: 12px;
+    background-color: #ebebeb;
+}
+
 header {
     background-color: #EAC926;
-    padding-bottom: 10px;
+    padding: 20px;
     width: 100%;
     margin: auto;
 }
 
-header img {
+.main-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
     display: block;
-    width: 30%;
-    padding: 10px;
+    width: 50%;
 }
 
-header .search-bar {
-    text-indent: 10px;
+.search-bar {
+    width: 50%;
+    text-align: right;
 }
 
-header .nav-bar, header .login-bar {
+.main-navbar {
     display: none;
 }
 
-header p {
-    text-align: center;
+.header-text {
     display: block;
+    text-align: center;
     width: 100%;
-    padding-top: 10px;
+    font-size: 17px;
 }
 
 .burger-menu {
@@ -48,15 +61,16 @@ header p {
     text-align: center;
     margin: auto;
     border-radius: 10px;
-    width: 30px;
-    height: 30px;
-    font-size: 15px;
+    width: 35px;
+    height: 35px;
+    font-size: 19px;
 }
 
-body {
-    font-family: roboto;
-    font-size: 12px;
-    background-color: #ebebeb;
+.home-banner {
+    position: relative;
+    width: 110%;
+    right: 5%;
+    top: 25px;
 }
 
 h2 {
@@ -66,47 +80,54 @@ h2 {
 
 main {
     width: 90%;
+    padding-top: 20px;
     margin: auto;
 }
 
-main article img {
+.article-general {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    background-color: white;
+    margin: 25px 0;
+}
+
+.article-general img {
     width: 100%;
 }
 
-main article i {
-    font-size: 14px;
+.article-description {
+    border-top: 1px solid #ebebeb;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.article-description i {
+    position: relative;
+    left: 35%;
+    margin-top: -30px;
+    display: block;
+    margin: auto;
+    font-size: 19px;
+    max-width: 40px;
     border: 1.3px solid #39b54a;
     border-radius: 50%;
     padding: 5px;
     color: #39b54a;
 }
 
-.last-visit article {
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.article-description {
-    border-top: 1px solid #ebebeb;
-    padding: 15px;
-}
-
-
 .precios {
-    font-size: 18px;
+    font-size: 22px;
     color: #666;
     font-weight: bold;
 }
 
 .descuentos {
-    font-size: 16px;
+    font-size: 20px;
     color: #39b54a;
-    margin-top: -15px;
 }
 
 .descripciones {
     display: none;
-    font-size: 16px;
+    font-size: 20px;
     color: #666;
 }
 
@@ -127,45 +148,132 @@ footer i {
 
 
 /*Tablet navigation*/
-@media (min-width: 361px){
-    main .article-general {
-        width: 100%;
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+@media (min-width: 755px){
+    header {
+        margin-top: -17px;
     }
 
-    .descripciones {
-        display: block;
-        color: #666;
-        font-size: 16px;
+    .logo {
+        width: 25%;
+        max-width: 350px;
+    }
+    
+    .search-bar {
+        text-align: center;
+        max-width: 10px;
+        width: 50%;
     }
 
-    header .nav-bar, header .login-bar {
-        display: inline;
+    .header-text {
+        margin: none;
+        text-align: right;
+        max-width: 350px;
+        font-size: 25px;
+    }
+
+    .main-navbar {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        color: #222222;
+        margin: 0;
+        padding: 0;
+    }
+
+    .main-navbar ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        text-align: left;
+        margin: 0;
+        padding: 0;
+    }
+
+    .main-navbar li {
+        padding: 0 10px;
+    }
+
+    .main-navbar a {
+        text-decoration: none;
+        color: #222222;
+        display: inline-block;
+        padding: 5px 0;
+        padding-right: 3px;
+        font-size: 17px;;
     }
 
     .burger-menu {
         display: none;
+    }
+
+    .article-general {
+        width: 48%;
+    }
+    
+    .last-visit, .deals {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .article-description {
+        text-align: left;
+        margin-left: 10px;
+    }
+
+    .article-description i {
+        margin-top: -30px;
+        font-size: 27px;
+        padding: 15px;
+        max-width: 65px;
+        background-color: #FFF;
+        border: 1.3px solid #39b54a;
+    }
+
+    .precios {
+        font-size: 25px;
+    }
+    
+    .descuentos {
+        margin-left: 10px;
+        font-size: 20px;
+        font-weight: lighter;
+    }
+
+    .descripciones {
+        display: block;
+        margin-top: -10px;
+        color: #ababab;
+        font-size: 22px;
+    }    
+
+    .precios, .descuentos {
+        display: inline-block;
     }
 }
 
 /*Desktop navigation*/
-@media (min-width: 769px){
-    main .article-general {
-        width: 100%;
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+@media (min-width: 1200px){
+    .main-header, .main-navbar {
+        max-width: 1200px;
+        padding: 5px 0;
+        margin: auto;
     }
 
-    .descripciones {
-        display: block;
-        color: #666;
-        font-size: 16px;
+    .header-text {
+        font-size: 25px;
+        font-weight: 400;
     }
 
-    header .nav-bar, header .login-bar {
-        display: inline;
+    .main-navbar {
+        margin-top: 20px;
     }
 
-    .burger-menu {
-        display: none;
+    .main-navbar a, .main-navbar i {
+        font-size: 18px;
+    }
+
+    .article-general {
+        width: 23%;
     }
 }
