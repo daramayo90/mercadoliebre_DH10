@@ -66,22 +66,18 @@ header {
     font-size: 19px;
 }
 
-.home-banner {
-    position: relative;
-    width: 110%;
-    right: 5%;
-    top: 25px;
-}
-
 h2 {
     font-size: 24px;
     color: #666;
 }
 
 main {
-    width: 90%;
-    padding-top: 20px;
     margin: auto;
+    width: 90%;
+}
+
+.home-banner {
+    width: 100%;
 }
 
 .article-general {
@@ -127,8 +123,17 @@ main {
 
 .descripciones {
     display: none;
-    font-size: 20px;
+    font-size: 20px;    
     color: #666;
+}
+
+.register-form {
+    width: 90%;
+    margin: auto;
+}
+
+.register-form div {
+    margin: 20px 0;
 }
 
 footer {
