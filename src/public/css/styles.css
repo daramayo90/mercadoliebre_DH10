@@ -36,19 +36,18 @@ header {
 
 .logo {
     display: block;
-    width: 200px;
-}
-
-.search-bar {
-    position: relative;
-    border: none;
-    width: 100%;
-    padding: 12px;
-    border-radius: 7px;
+    margin: auto;
+    flex-grow: 1;
+    width: 150px;
+    max-width: 200px;
+    margin-bottom: 20px;
 }
 
 .form-searchbar {
     position: relative;
+    display: block;
+    flex-grow: 1;
+    margin: 0 20px;
 }
 
 .form-searchbar i {
@@ -57,6 +56,15 @@ header {
     right: 10px;
     font-size: 15px;
     color:rgb(100, 100, 100);
+}
+
+.search-bar {
+    position: relative;
+    border: none;
+    width: 100%;
+    padding: 11px;
+    border-radius: 7px;
+    font-size: 1.2em;
 }
 
 .main-navbar {
@@ -96,7 +104,7 @@ main {
 
 .home-banner {
     width: 100%;
-    margin-top: 180px;
+    margin-top: 260px;
 }
 
 .article-general {
@@ -148,7 +156,7 @@ main {
 .register-form, .login-form {
     width: 90%;
     margin: auto;
-    margin-top: 200px;
+    margin-top: 280px;
     margin-bottom: 200px;
 }
 
@@ -216,26 +224,51 @@ footer i {
     margin-bottom: 10px;
 }
 
-
-/*Tablet navigation*/
-@media (min-width: 815px){
-    header {
-        margin-top: -17px;
+/*Small devices*/
+@media (min-width: 367px){
+    .home-banner {
+        margin-top: 240px;
     }
 
-    .logo {
-        width: 25%;
-        max-width: 350px;
+    .register-form, .login-form {
+        margin-top: 260px;
+    }
+}
+
+/*Medium devices*/
+@media (min-width: 420px){
+    .home-banner {
+        margin-top: 190px;
+    }
+
+    .register-form, .login-form {
+        margin-top: 220px;
+    }
+
+    .search-bar {
+        bottom: 12px;
+        font-size: 1.2em;
+    }
+
+    .form-searchbar i {
+        top: 0px;
+    }
+}
+
+
+/*Tablet navigation*/
+@media (min-width: 864px){
+    header {
+        margin-top: -17px;
     }
 
     .search-bar {
         margin-left: 30px;
         padding: 15px;
-        font-size: 1.2em;
     }
 
     .form-searchbar i {
-        top: 17px;
+        top: 5px;
         right: -18px;
     }
 
@@ -330,6 +363,11 @@ footer i {
         display: inline-block;
     }
 
+    .register-form h2, .login-form h2 {
+        width: 50%;
+        margin: auto;
+    }
+
     .register-field, .login-field {
         width: 50%;
         margin: auto;
@@ -354,7 +392,7 @@ footer i {
 }
 
 /*Desktop navigation*/
-@media (min-width: 1000px){
+@media (min-width: 1200px){
     .main-header, .main-navbar {
         max-width: 1200px;
         padding: 5px 0;
@@ -400,7 +438,7 @@ footer i {
     }
 
     footer section {
-        max-width: 450px;
+        max-width: 300px;
     }
 
     footer i {
