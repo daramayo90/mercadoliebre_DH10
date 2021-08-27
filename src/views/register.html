@@ -47,76 +47,85 @@
 
     <main>
         <form class="register-form" action="/" method="GET">
-            <div>
-                <input type="text" name="name" id="name" placeholder="Ingrese su Nombre" required></input>
+            <div class="register-field">
+                <input type="text" name="name" id="name" placeholder="Ingrese su Nombre" required class="register-input"></input>
                 <span>
 
                 </span>
             </div>
 
-            <div>
-                <input type="text" name="surname" id="surname" placeholder="Ingrese su Apellido" required></input>
+            <div class="register-field">
+                <input type="text" name="surname" id="surname" placeholder="Ingrese su Apellido" required class="register-input"></input>
                 <span>
 
                 </span>
             </div>
 
-            <div>
-                <input type="text" name="user" id="user" placeholder="Ingrese un nombre de Usuario" required></input>
+            <div class="register-field">
+                <input type="text" name="user" id="user" placeholder="Ingrese un nombre de Usuario" required class="register-input"></input>
                 <span>
 
                 </span>
             </div>
 
-            <div>
-                <label for="date">Ingrese su Fecha de Nacimiento</label>
-                <input type="date" name="date" id="date"></input>
-            </div>
-
-            <div>
-                <input type="text" name="address" id="address" placeholder="Ingrese su Domicilio"></input>
+            <div class="register-field">
+                <input type="email" name="email" id="email" placeholder="Ingrese un email válido" required class="register-input"></input>
                 <span>
 
                 </span>
             </div>
 
-            <div>
+            <div class="register-field">
+                <label for="date" class="register-date">Ingrese su Fecha de Nacimiento:</label>
+                <input type="date" name="date" id="date" class="register-input"></input>
+            </div>
+
+            <div class="register-field">
+                <input type="text" name="address" id="address" placeholder="Ingrese su Domicilio" class="register-input"></input>
+                <span>
+
+                </span>
+            </div>
+
+            <div class="register-field">
                 <h3>Perfil de usuario:</h3>
-                <input type="radio" name="rd-profile" value="buyer">Comprador</input>
-                <input type="radio" name="rd-profile" value="seller">Vendedor</input>
+                <input type="radio" name="rd-profile" value="buyer" class="register-user">Comprador</input>
+                <input type="radio" name="rd-profile" value="seller" class="register-user">Vendedor</input>
             </div>
 
-            <div>
-                <label>Intereses:</label>
-                <input type="checkbox" name="interest" value="electro">Electro</input>
-                <input type="checkbox" name="interest" value="moda">Moda</input>
-                <input type="checkbox" name="interest" value="hogar">Hogar</input>
-                <input type="checkbox" name="interest" value="juguetería">Jugetería</input>
-                <input type="checkbox" name="interest" value="vida-sana">Vida sana</input>
+            <div class="register-field">
+                <label class="register-interest">Intereses:</label>
+                <select name="interest-selection" class="register-input">
+                    <option value="Electro">Electro</option>
+                    <option value="Moda">Moda</option>
+                    <option value="Hogar">Hogar</option>
+                    <option value="Jugetería">Jugetería</option>
+                    <option value="Vida sana">Vida sana</option>
+                </select>
             </div>
 
-            <div>
-                <label for="profile">Selecciona una imágen de perfil</label>
+            <div class="register-field">
+                <label for="profile" class="register-profile">Selecciona una imágen de perfil</label>
                 <input type="file" name="profile" id="profile" multiple></input>
             </div>
 
-            <div>
-                <input type="password" name="pass" id="pass" placeholder="Ingrese una Contraseña" required></input>
+            <div class="register-field">
+                <input type="password" name="pass" id="pass" placeholder="Ingrese una Contraseña" required class="register-input"></input>
                 <span>
 
                 </span>
             </div>
 
-            <div>
-                <input type="password" name="pass2" id="pass2" placeholder="Confirmar Contraseña" required></input>
+            <div class="register-field">
+                <input type="password" name="pass2" id="pass2" placeholder="Confirmar Contraseña" required class="register-input"></input>
                 <span>
 
                 </span>
             </div>
 
-            <div>
-                <button type="submit">Enviar</button>
-                <button type="reset">Borrar</button>
+            <div class="register-buttons">
+                <button type="reset" class="reset-button">Borrar</button>
+                <button type="submit" class="send-button">Enviar</button>
             </div>
         </form>
     </main>

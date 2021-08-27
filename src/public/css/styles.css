@@ -127,20 +127,61 @@ main {
     color: #666;
 }
 
-.register-form {
+.register-form, .login-form {
     width: 90%;
     margin: auto;
+    margin-bottom: 200px;
 }
 
-.register-form div {
-    margin: 20px 0;
+.register-field, .login-field {
+    display: block;
+    margin: 40px 0;
+    font-size: 18px;
+    width: 100%;
 }
+
+.register-input, .login-input {
+    border: none;
+    width: 100%;
+    padding: 12px;
+    border-radius: 7px;
+}
+
+.register-date, .register-interest, .register-profile {
+    display: block;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.register-user {
+    margin: 0 15px;
+}
+
+.register-buttons {
+    display: block;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+}
+
+.send-button, .reset-button {
+    padding: 15px;
+    font-size: 1.5em;
+    border-radius: 15px;
+    margin: 0 40px;
+    border: none;
+    background-color: #1259c3;
+    color: #FFF;
+}
+
 
 footer {
     text-align: center;
     width: 100%;
     display: block;
     margin-left: -20px;
+    font-size: 17px;
 }
 
 footer i {
@@ -254,6 +295,28 @@ footer i {
 
     .precios, .descuentos {
         display: inline-block;
+    }
+
+    .register-field, .login-field {
+        width: 50%;
+        margin: auto;
+    }
+
+    .register-input, .login-input {
+        margin: 20px 0;
+    }
+    
+    .register-date, .register-interest, .register-profile {
+        margin-top: 10px;
+        margin-bottom: -10px;
+    }
+
+    .register-interest {
+        margin-top: 40px;
+    }
+
+    .register-profile {
+        margin: 20px 0;
     }
 }
 
