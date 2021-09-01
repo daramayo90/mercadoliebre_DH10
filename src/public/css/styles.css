@@ -11,12 +11,6 @@ Verde: #39b54a;
     box-sizing: border-box;
 }
 
-body {
-    font-family: roboto;
-    font-size: 12px;
-    background-color: #ebebeb;
-}
-
 header {
     background-color: #EAC926;
     padding: 20px;
@@ -90,6 +84,12 @@ header {
     width: 35px;
     height: 35px;
     font-size: 19px;
+}
+
+body {
+    font-family: roboto;
+    font-size: 12px;
+    background-color: #ebebeb;
 }
 
 h2 {
